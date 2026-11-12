@@ -149,7 +149,7 @@ function validateName() {
 function validatePhone() {
   const phone = phoneInput.value.trim();
   const digitCount = phone.replace(/\D/g, "").length;
-  const valid = /^[+\d\s()–—-]+$/.test(phone) && digitCount >= 10 && digitCount <= 15;
+  const valid = /^\+?[\d\s()–—-]+$/.test(phone) && digitCount >= 10 && digitCount <= 15;
   setFieldError(phoneInput, document.querySelector("#phone-error"), valid ? "" : "Укажите телефон из 10–15 цифр, например +7 (999) 123-45-67.");
   return valid;
 }
