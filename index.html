@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Квадро — демонстрационный лендинг студии ремонта квартир. Интерьеры, виды ремонта и интерактивный расчёт стоимости.">
+  <meta name="theme-color" content="#f6f4f0">
+  <title>Квадро — ремонт, с которого начинается дом</title>
+  <link rel="preload" href="assets/fonts/Inter-Variable.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Перейти к содержимому</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#" aria-label="Квадро — на главную">
+        <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+        <span>квадро<span class="brand-dot">.</span></span>
+      </a>
+      <nav class="desktop-nav" aria-label="Основная навигация">
+        <a href="#services">Виды ремонта</a>
+        <a href="#projects">Проекты</a>
+        <a href="#process">Как работаем</a>
+      </nav>
+      <a class="button button-small header-cta" href="#calculator">Рассчитать стоимость <span aria-hidden="true">↗</span></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Открыть меню"><span></span><span></span></button>
+    </div>
+    <nav class="mobile-nav" id="mobile-menu" aria-label="Мобильная навигация" hidden>
+      <a href="#services">Виды ремонта</a>
+      <a href="#projects">Проекты</a>
+      <a href="#process">Как работаем</a>
+      <a href="#calculator">Рассчитать стоимость</a>
+      <a href="#contact">Обсудить ремонт</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero container" aria-labelledby="hero-title">
+      <div class="hero-heading">
+        <div>
+          <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> Ремонт квартир под ключ</p>
+          <h1 id="hero-title">Ремонт, с которого<br><span>начинается дом.</span></h1>
+        </div>
+        <div class="hero-intro">
+          <p>Продуманный ремонт для вашей жизни.<br>От первого замера до последней детали.</p>
+          <a class="button" href="#calculator">Рассчитать мой ремонт <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+      <div class="hero-photo">
+        <img src="assets/images/living-room.jpg" alt="Светлая гостиная с мягким диваном, деревянным полом и тёплым солнечным светом" width="1536" height="1024" fetchpriority="high">
+        <span class="demo-label">Демо-проект для портфолио</span>
+        <a class="photo-caption" href="#projects">
+          <span><strong>Место, куда хочется возвращаться</strong><small>Тёплый минимализм · 62 м²</small></span>
+          <span class="round-arrow" aria-hidden="true">↗</span>
+        </a>
+      </div>
+      <div class="hero-benefits">
+        <p><span class="benefit-symbol" aria-hidden="true">✓</span><span><strong>Понятная смета</strong><small>Состав работ до начала ремонта</small></span></p>
+        <p><span class="benefit-symbol" aria-hidden="true">◷</span><span><strong>Работа по этапам</strong><small>Согласованный график и приёмка</small></span></p>
+        <p><span class="benefit-symbol" aria-hidden="true">↗</span><span><strong>Внимание к деталям</strong><small>От инженерии до чистовой отделки</small></span></p>
+      </div>
+    </section>
+
+    <section class="section container" id="services" aria-labelledby="services-title">
+      <div class="section-heading">
+        <div><p class="eyebrow">Виды ремонта</p><h2 id="services-title">У каждой квартиры<br>своя отправная точка.</h2></div>
+        <p class="section-intro">Освежить любимый интерьер или обустроить всё с нуля — подберём подходящий состав работ.</p>
+      </div>
+      <div class="service-grid">
+        <article class="service-card">
+          <p class="service-kicker">Обновить пространство</p><h3>Косметический</h3>
+          <p>Когда планировка и коммуникации устраивают, а интерьеру нужны перемены.</p>
+          <ul class="check-list"><li>Подготовка и покраска стен</li><li>Обновление напольного покрытия</li><li>Замена плинтусов и освещения</li></ul>
+          <div class="service-bottom"><p>от <strong>6 000 ₽</strong> / м²</p><a href="#calculator" class="circle-link" data-service="cosmetic" aria-label="Рассчитать косметический ремонт">↗</a></div>
+        </article>
+        <article class="service-card service-card-accent">
+          <p class="service-kicker">Переосмыслить каждый метр</p><h3>Капитальный</h3>
+          <p>Полное обновление квартиры с подготовкой основания и заменой коммуникаций.</p>
+          <ul class="check-list"><li>Демонтаж и подготовка основания</li><li>Новая электрика и сантехника</li><li>Черновая и чистовая отделка</li></ul>
+          <div class="service-bottom"><p>от <strong>14 000 ₽</strong> / м²</p><a href="#calculator" class="circle-link" data-service="capital" aria-label="Рассчитать капитальный ремонт">↗</a></div>
+        </article>
+        <article class="service-card">
+          <p class="service-kicker">Создать свой первый интерьер</p><h3>В новостройке</h3>
+          <p>От бетонных стен до готового пространства с учётом привычек вашей семьи.</p>
+          <ul class="check-list"><li>Подготовка стен и пола</li><li>Разводка инженерных систем</li><li>Чистовая отделка и установка дверей</li></ul>
+          <div class="service-bottom"><p>от <strong>12 000 ₽</strong> / м²</p><a href="#calculator" class="circle-link" data-service="newbuild" aria-label="Рассчитать ремонт новостройки">↗</a></div>
+        </article>
+      </div>
+      <p class="section-note">Учебные расценки за работы. Материалы, мебель и техника рассчитываются отдельно.</p>
+    </section>
+
+    <section class="section projects-section" id="projects" aria-labelledby="projects-title">
+      <div class="container">
+        <div class="section-heading">
+          <div><p class="eyebrow">Пространства для жизни</p><h2 id="projects-title">Детали складываются<br>в ощущение дома.</h2></div>
+          <p class="section-intro">Три интерьерные концепции для этого демо. Изображения созданы с помощью ИИ, параметры проектов — примеры.</p>
+        </div>
+        <div class="project-grid">
+          <article class="project-card project-featured">
+            <button class="project-image" type="button" data-gallery="0" aria-label="Увеличить интерьер «Тёплый минимализм»">
+              <img src="assets/images/living-room.jpg" alt="Гостиная в тёплых оттенках с фактурным диваном и дубовым паркетом" width="1536" height="1024" loading="lazy">
+              <span class="project-tag">62 м² · Новостройка</span><span class="project-zoom" aria-hidden="true">↗</span>
+            </button>
+            <div class="project-description"><div><h3>Тёплый минимализм</h3><p>Дуб, фактурные стены и естественный свет</p></div><span>12 недель*</span></div>
+          </article>
+          <article class="project-card">
+            <button class="project-image" type="button" data-gallery="1" aria-label="Увеличить интерьер «Тихое утро»">
+              <img src="assets/images/kitchen.jpg" alt="Кухня с шалфейными фасадами, дубовыми шкафами и круглым столом" width="1536" height="1024" loading="lazy">
+              <span class="project-tag">38 м² · Вторичное жильё</span><span class="project-zoom" aria-hidden="true">↗</span>
+            </button>
+            <div class="project-description"><div><h3>Тихое утро</h3><p>Природные оттенки и продуманное хранение</p></div><span>10 недель*</span></div>
+          </article>
+          <article class="project-card">
+            <button class="project-image" type="button" data-gallery="2" aria-label="Увеличить интерьер «Мягкая классика»">
+              <img src="assets/images/bedroom.jpg" alt="Спальня с деревянным изголовьем, льняным текстилем и классическими молдингами" width="1536" height="1024" loading="lazy">
+              <span class="project-tag">84 м² · Новостройка</span><span class="project-zoom" aria-hidden="true">↗</span>
+            </button>
+            <div class="project-description"><div><h3>Мягкая классика</h3><p>Спокойная геометрия и натуральные материалы</p></div><span>16 недель*</span></div>
+          </article>
+        </div>
+        <p class="section-note">* Площадь и сроки приведены для демонстрации оформления кейсов.</p>
+      </div>
+    </section>
+
+    <section class="section container" id="calculator" aria-labelledby="calculator-title">
+      <div class="section-heading"><div><p class="eyebrow">Планируем бюджет</p><h2 id="calculator-title">Сколько стоит<br>ваше новое начало?</h2></div><p class="section-intro">Укажите параметры квартиры.<br>Предварительный расчёт появится сразу.</p></div>
+      <div class="calculator-layout">
+        <form id="calculator-form" class="calculator-controls">
+          <fieldset>
+            <legend>Какая у вас квартира?</legend>
+            <div class="choice-row housing-choices">
+              <label class="choice"><input type="radio" name="housing" value="new" checked><span>Новостройка</span></label>
+              <label class="choice"><input type="radio" name="housing" value="secondary"><span>Вторичное жильё</span></label>
+            </div>
+          </fieldset>
+          <div class="area-control">
+            <div class="area-heading"><label for="area">Площадь квартиры</label><div class="area-input-wrap"><input id="area" name="area" type="number" min="20" max="200" step="1" value="62" required aria-describedby="area-help area-error"><span>м²</span></div></div>
+            <input id="area-range" class="area-range" type="range" min="20" max="200" step="1" value="62" aria-label="Площадь квартиры в квадратных метрах" aria-describedby="area-help">
+            <div class="range-labels" id="area-help"><span>20 м²</span><span>200 м²</span></div>
+            <p id="area-error" class="field-error" aria-live="polite"></p>
+          </div>
+          <fieldset>
+            <legend>Какой ремонт планируете?</legend>
+            <div class="choice-column">
+              <label class="repair-choice"><input type="radio" name="repair" value="cosmetic"><span class="radio-indicator" aria-hidden="true"></span><span><strong>Косметический</strong><small>Обновление отделки</small></span><span class="repair-rate">от 6 000 ₽/м²</span></label>
+              <label class="repair-choice"><input type="radio" name="repair" value="capital"><span class="radio-indicator" aria-hidden="true"></span><span><strong>Капитальный</strong><small>Полное обновление квартиры</small></span><span class="repair-rate">от 14 000 ₽/м²</span></label>
+              <label class="repair-choice"><input type="radio" name="repair" value="newbuild" checked><span class="radio-indicator" aria-hidden="true"></span><span><strong>В новостройке</strong><small>Обустройство с нуля</small></span><span class="repair-rate">от 12 000 ₽/м²</span></label>
+            </div>
+          </fieldset>
+          <p class="calculator-help" id="housing-help">Для новостройки на этапе черновой отделки подойдёт ремонт с нуля.</p>
+        </form>
+        <aside class="estimate-card" aria-labelledby="estimate-title">
+          <p class="estimate-eyebrow" id="estimate-title">Предварительная стоимость работ</p>
+          <div aria-live="polite" aria-atomic="true"><p class="estimate-price" id="estimate-price">744 000 —<br>892 800 ₽</p><p class="estimate-meta" id="estimate-meta">62 м² · Новостройка · Ремонт с нуля</p></div>
+          <div class="estimate-includes"><p>В расчёте учтены</p><ul class="check-list" id="estimate-includes"><li>Подготовка стен и пола</li><li>Электрика и сантехника</li><li>Чистовая отделка</li></ul></div>
+          <a href="#contact" class="button button-light" id="estimate-cta">Обсудить мой ремонт <span aria-hidden="true">↗</span></a>
+          <p class="estimate-disclaimer">Учебный расчёт по условным расценкам. Материалы, мебель и техника оплачиваются отдельно. Точная смета зависит от состояния квартиры и состава работ.</p>
+          <details class="calculation-details"><summary>Как считается стоимость</summary><p id="estimate-formula">62 м² × 12 000 ₽ × 1. Верхняя граница включает запас 20% для демонстрации диапазона.</p></details>
+        </aside>
+      </div>
+    </section>
+
+    <section class="care-section" aria-labelledby="care-title">
+      <div class="container care-layout">
+        <div class="care-image"><img src="assets/images/bedroom.jpg" alt="Детали отделки спальни — деревянные панели и светлые стены с молдингами" width="1536" height="1024" loading="lazy"></div>
+        <div class="care-content"><p class="eyebrow">Продумано до деталей</p><h2 id="care-title">Красивый результат<br>начинается с порядка.</h2>
+          <div class="care-point"><h3>Каждая работа — в смете</h3><p>Фиксируем объём и состав работ. Изменения обсуждаем до их выполнения.</p></div>
+          <div class="care-point"><h3>Материалы — по плану</h3><p>Составляем список закупок и согласовываем доставку под этапы ремонта.</p></div>
+          <div class="care-point"><h3>Ход ремонта — на виду</h3><p>Показываем выполненные работы и вместе проверяем результат каждого этапа.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container" id="process" aria-labelledby="process-title">
+      <div class="section-heading"><div><p class="eyebrow">Как работаем</p><h2 id="process-title">От первого разговора<br>до «мы дома».</h2></div><p class="section-intro">Понятная последовательность, в которой у каждого решения своё место.</p></div>
+      <ol class="process-list">
+        <li><span class="step-number" aria-hidden="true">01</span><h3>Знакомимся</h3><p>Обсуждаем квартиру, ваши привычки, пожелания и бюджет.</p></li>
+        <li><span class="step-number" aria-hidden="true">02</span><h3>Планируем</h3><p>Уточняем размеры, составляем смету и согласовываем график.</p></li>
+        <li><span class="step-number" aria-hidden="true">03</span><h3>Воплощаем</h3><p>Выполняем работы по этапам и показываем промежуточный результат.</p></li>
+        <li><span class="step-number" aria-hidden="true">04</span><h3>Передаём ключи</h3><p>Проверяем отделку и инженерные системы, принимаем работы.</p></li>
+      </ol>
+    </section>
+
+    <section class="section container faq-layout" id="faq" aria-labelledby="faq-title">
+      <div><p class="eyebrow">Есть вопросы?</p><h2 id="faq-title">Обсудим<br>самое важное.</h2><a href="#contact" class="text-link">Задать свой вопрос <span aria-hidden="true">↗</span></a></div>
+      <div class="faq-list">
+        <details><summary>Что входит в стоимость ремонта?</summary><p>Калькулятор показывает стоимость работ для выбранного вида ремонта. Перечень появляется рядом с результатом. Материалы, мебель и техника учитываются отдельно. Все цены в этом демо условные.</p></details>
+        <details><summary>Кто покупает материалы?</summary><p>В предлагаемом сценарии компания составляет список материалов и график закупок. Заказчик может приобрести их самостоятельно или согласовать комплектацию с подрядчиком.</p></details>
+        <details><summary>Может ли измениться смета?</summary><p>После осмотра квартиры уточняются состояние основания, коммуникаций и объём работ. Дополнительные работы и их стоимость согласовываются до начала выполнения.</p></details>
+        <details><summary>Как происходит оплата?</summary><p>Для примера предусмотрена поэтапная оплата после приёмки согласованного объёма работ. Конкретные суммы и порядок расчётов фиксируются при заключении договора.</p></details>
+        <details><summary>Можно ли жить в квартире во время ремонта?</summary><p>Это зависит от состава работ. При полном демонтаже, замене коммуникаций и черновой отделке обычно требуется временный переезд. Возможность поэтапного обновления комнат обсуждается отдельно.</p></details>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contact" aria-labelledby="contact-title">
+      <div class="container contact-layout">
+        <div class="contact-copy"><p class="eyebrow">Начнём с вашей идеи</p><h2 id="contact-title">Каким будет<br>ваш дом?</h2><p>Расскажите о планах на ремонт.<br>Первый шаг — понятные пожелания<br>и ориентир по бюджету.</p><div class="contact-demo"><span class="status-dot" aria-hidden="true"></span><span>Демонстрационная форма<br><small>Данные обрабатываются только на этой странице</small></span></div></div>
+        <form id="contact-form" class="contact-form" novalidate>
+          <div class="contact-estimate"><span>Ваш предварительный расчёт</span><strong id="contact-estimate">744 000–892 800 ₽</strong><p id="contact-parameters">62 м² · Новостройка · Ремонт с нуля</p><a href="#calculator">Изменить параметры ↗</a></div>
+          <div class="form-field"><label for="contact-name">Как к вам обращаться?</label><input id="contact-name" name="name" autocomplete="name" placeholder="Ваше имя" required minlength="2" maxlength="80" aria-describedby="name-error"><p class="field-error" id="name-error" aria-live="polite"></p></div>
+          <div class="form-field"><label for="contact-phone">Телефон</label><input id="contact-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="+7 (999) 123-45-67" required maxlength="24" aria-describedby="phone-hint phone-error"><p class="field-error" id="phone-error" aria-live="polite"></p><p class="input-hint" id="phone-hint">Для примера подойдёт +7 (999) 123-45-67.</p></div>
+          <button class="button" type="submit">Обсудить ремонт <span aria-hidden="true">↗</span></button>
+          <p class="form-note">Демо-режим. Введите пример имени и телефона, чтобы посмотреть результат заполнения.</p>
+          <div class="form-result" id="form-result" role="status" tabindex="-1" hidden></div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer container">
+    <a class="brand" href="#" aria-label="Квадро — наверх"><span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i><i></i></span><span>квадро<span class="brand-dot">.</span></span></a>
+    <p>Демо-лендинг для портфолио · 2026<br><span>Вымышленная компания. Интерьеры созданы с помощью ИИ.</span></p>
+    <a class="back-to-top" href="#">Наверх <span aria-hidden="true">↑</span></a>
+  </footer>
+
+  <dialog id="gallery-dialog" class="gallery-dialog" aria-labelledby="gallery-title">
+    <button class="gallery-close" type="button" aria-label="Закрыть галерею">×</button>
+    <figure><img id="gallery-image" src="assets/images/living-room.jpg" alt="" width="1536" height="1024"><figcaption><div><h2 id="gallery-title">Тёплый минимализм</h2><p id="gallery-description"></p></div><div class="gallery-navigation"><button id="gallery-prev" type="button" aria-label="Предыдущий интерьер">←</button><span id="gallery-counter" aria-live="polite">1 / 3</span><button id="gallery-next" type="button" aria-label="Следующий интерьер">→</button></div></figcaption></figure>
+  </dialog>
+  <noscript><div class="noscript-message">Для калькулятора, формы и увеличения фотографий включите JavaScript в браузере.</div></noscript>
+</body>
+</html>
